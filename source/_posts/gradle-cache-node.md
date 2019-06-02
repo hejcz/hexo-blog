@@ -4,7 +4,7 @@ date: 2018-07-29 19:33:45
 tags:
 - gradle
 ---
-Build cache in gradle can be either local or remote. As project is getting bigger remote cache is much more useful because the particular part of the build must be run only once and many developers can reuse it. The goal of this post is to explain how to start a journey with remote cache using {% link docker image https://hub.docker.com/r/gradle/build-cache-node/ %} published by gradle team. We will use example from {% post_link gradle-cache-basics previous post  %} which copies `settings.gradle` file reversing letters in it's lines.
+Build cache in gradle can be either local or remote. As project is getting bigger remote cache is much more useful because the particular part of the build must be run only once and many developers can reuse it. The goal of this post is to explain how to start a journey with remote cache using [docker image](https://hub.docker.com/r/gradle/build-cache-node/) published by gradle team. We will use example from {% post_link gradle-cache-basics previous post  %} which copies `settings.gradle` file reversing letters in it's lines.
 
 ```java
 @CacheableTask
